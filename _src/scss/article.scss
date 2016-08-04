@@ -1,0 +1,24 @@
+.gpes-article-main {
+
+	padding-top: 15px;
+	padding-bottom: 20px;
+	text-rendering: optimizelegibility;
+	min-height: 400px;
+	font-family: $font-family-serif;
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #9dc02e;
+	}
+
+	h2, h3, h4, h5, h6 {
+		color: #333;
+		text-transform: uppercase;
+	}
+
+	code, pre {
+		font-size: $font-size-base;
+	}
+
+}

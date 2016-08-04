@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$main-color:              #3fa14c !default;
+$navbar-height:           60px !default;
+$border-radius-base:      0px !default;
+$pager-border-radius:     0px !default;
+$font-size-base:          16px !default;
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Raleway", Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   "Inconsolata", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+@import "bootstrap";
+@import "materialdesignicons";
+
+@import "header";
+@import "navbar";
+@import "footer";
+@import "article";
+@import "blog";
+@import "search";
+
+body {
+	line-height: 170%;
+}
+
+.container-all {
+	@extend .container;	
+}
