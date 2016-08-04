@@ -34,6 +34,7 @@ authors:
 # Build settings
 markdown: kramdown
 exclude: [
+  "_src",
   "bower_components/",
   "node_modules/",
   "package.json",
