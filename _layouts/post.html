@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="gpes-post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h2 class="post-headline">{{ page.headline }}</h2>
+  	<div class="post-metadata">
+    	<p class="post-meta"><i class="mdi mdi-calendar"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | | date: "%d/%m/%Y" }}</time>{% if page.author %} • Por <span class="post-metadata-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.authors[page.author].display_name }}</span></span> • Categorias: {% for category in page.categories %}<span class="label label-success">{{ category }}</span> {% endfor %}{% endif %}</p>
+    </div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="author-metadata row">
+	<div class="col-md-1">
+		<img class="img-author" src="https://www.gravatar.com/avatar/{{ site.authors[page.author].avatar }}?s=70"/>
+	</div>
+	<div class="col-md-11">
+		<h4 class="author-metadata-title">Sobre o autor</h4>
+		<p><span class="author-name">{{ site.authors[page.author].display_name }}</span>. {{ site.authors[page.author].minibio }} | <a href="#">Visualizar perfil completo</a></p>
+	</div>
+  </div>
+
+  {% if page.comments == true %}
+  <div class="post-comments">{% include posts/comments.html %}</div>
+  {% endif %}
+
+
+</article>
