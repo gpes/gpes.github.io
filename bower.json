@@ -1,0 +1,27 @@
+{
+  "name": "gpes",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Diogo Moreira"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "software",
+    "engineer"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "mdi": "~1.3.41",
+    "jquery": "2.2.4"
+  }
+}
