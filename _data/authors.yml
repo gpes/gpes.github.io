@@ -1,0 +1,25 @@
+diogodmoreira:
+  name        : "Diogo Moreira"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : assets/images/researchers/diogomoreira.jpg
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:diogo.moreira@ifpb.edu.br"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://diogodmoreira.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/diogodmoreira"
+ricardojob:
+  name        : "Ricardo Job"
+  bio         : "Any message you want."
+  avatar      : assets/images/researchers/ricardojob.jpg
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ricardo.job@ifpb.edu.br"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ricardojob"
