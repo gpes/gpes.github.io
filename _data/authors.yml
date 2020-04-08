@@ -1,6 +1,6 @@
 diogodmoreira:
   name        : "Diogo Moreira"
-  bio         : "What do you want, jewels? I am a very extravagant man."
+  bio         : "Software Testing enthusiast, music lover."
   avatar      : assets/images/researchers/diogomoreira.jpg
   links:
     - label: "Email"
@@ -12,6 +12,9 @@ diogodmoreira:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/diogodmoreira"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/diogomoreira"
 ricardojob:
   name        : "Ricardo Job"
   bio         : "Any message you want."
