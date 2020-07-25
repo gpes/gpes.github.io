@@ -5,11 +5,12 @@
 @charset "utf-8";
 
 $serif      : 'Merriweather', Georgia, Times, serif;
-$sans-serif : 'Inter', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace  : Monaco, Consolas, "Lucida Console", monospace; 
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes";
+@import "./mixins.scss";
 
 .grid__item .archive__item-title,
 .grid__item .archive__item-excerpt {
@@ -20,42 +21,91 @@ $monospace  : Monaco, Consolas, "Lucida Console", monospace;
   display: block;
 }
 
-.archive__item-teaser {
-
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 1px 1px 4px rgba($color: #000000, $alpha: 0.6);
-
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-
-  @include breakpoint($small) {
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-  }
-
-  @include breakpoint($medium) {
-    width: 120px;
-    height: 120px;
-    background-size: cover;
+.page__hero--overlay .page__title {
+  font-size: 1.8em;
+  small {
+    font-size: 50%;
+    font-weight: 100;
   }
 }
 
-// html {
-//   font-size: 16px; // change to whatever
+.grid__item .archive__item {
 
-//   @include breakpoint($medium) {
-//     font-size: 16px; // change to whatever
-//   }
+  &-teaser {
 
-//   @include breakpoint($large) {
-//     font-size: 18px; // change to whatever
-//   }
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid #ececec;
+    box-shadow: 1px 1px 4px rgba($color: #000000, $alpha: 0.6);
 
-//   @include breakpoint($x-large) {
-//     font-size: 18px; // change to whatever
-//   }
-// }
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+
+    @include breakpoint($small) {
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+    }
+
+    @include breakpoint($medium) {
+      width: 120px;
+      height: 120px;
+      background-size: cover;
+    }
+  }
+
+  &-title {
+    font-size: 1.2em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  &-excerpt {
+    font-size: 0.8em;
+  }
+}
+
+.archive__item {
+  &-title {
+    font-size: 1.5em;
+  }
+  &-excerpt { 
+    font-size: 1em;
+  }
+}
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 20%;
+  // height: 36px;
+  img {
+    max-width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.sidebar {
+  .author__name {
+    text-align: center;
+    @include breakpoint($medium) {
+      font-size: 1.3em;
+    }
+  }
+  .author__bio {
+    text-align: center;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}
+
+html {
+  font-size: 100%;
+}
