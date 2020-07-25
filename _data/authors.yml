@@ -1,7 +1,7 @@
 diogodmoreira:
   name        : "Diogo Moreira"
   bio         : "Software Testing enthusiast, music lover."
-  avatar      : assets/images/researchers/diogomoreira.jpg
+  avatar      : assets/images/researchers/diogomoreira-teaser.jpg
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -18,7 +18,7 @@ diogodmoreira:
 ricardojob:
   name        : "Ricardo Job"
   bio         : "Any message you want."
-  avatar      : assets/images/researchers/ricardojob.jpg
+  avatar      : assets/images/researchers/ricardojob-teaser.jpg
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
